@@ -1,6 +1,6 @@
 # Strategy Pattern
 
-> "Using composition rather than inheritance." - Christopher Okhravi
+> "Using composition rather than inheritance. Inheritance is not intended for code reuse." - Christopher Okhravi
 
 > "Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it." - Head First Book
 
