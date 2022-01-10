@@ -1,10 +1,24 @@
-const createValidator = require('./strategy/strategy');
+const createCart = require('./observer/observer');
 
-const age = 18;
-const ageValidator = createValidator(age, (data) => data > 18);
+const totalPrice = 100.0;
+const cart = createCart(totalPrice);
 
-console.log(ageValidator.validate());
+cart.updateTotalPrice(120);
 
-ageValidator.updateValidator((data) => data >= 18);
+const totalPricePrinter = (totalPrice) => {
+  console.log(`Total Price: ${totalPrice}`);
+};
 
-console.log(ageValidator.validate());
+const totalPriceWithDiscountPrinter = (totalPrice) => {
+  const discount = 10;
+  console.log(`Total Price with discount: ${totalPrice - discount}`);
+};
+
+cart.register(totalPricePrinter);
+cart.register(totalPriceWithDiscountPrinter);
+
+cart.updateTotalPrice(135);
+
+cart.unregister(totalPricePrinter);
+
+cart.updateTotalPrice(150);

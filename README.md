@@ -1,5 +1,9 @@
 # Javascript Design Patterns (mostly in functional way)
 
+## Design Patterns
+
+(Examples)[./src]
+
 ## TODO
 
 - [x] Strategy Pattern
