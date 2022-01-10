@@ -1,0 +1,11 @@
+{
+  "name": "dp-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dvsource/dp-js.git",
+  "author": "Viraj Kaushalye <virajk@codegen.net>",
+  "license": "MIT",
+  "scripts": {
+    "play": "node ./src/app.js"
+  }
+}
