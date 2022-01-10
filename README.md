@@ -2,8 +2,7 @@
 
 ## TODO
 
-- [x] Initial README.md
-- [ ] Strategy Pattern
+- [x] Strategy Pattern
 - [ ] Obeserver Pattern
 - [ ] Decorator Pattern
 - [ ] Factory Method Pattern

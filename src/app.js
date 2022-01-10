@@ -1,12 +1,4 @@
-const createValidator = (currentData, validationStrategy) => {
-  const data = currentData;
-  let currentValidationStrategy = validationStrategy;
-
-  return {
-    updateValidator: (stategy) => (currentValidationStrategy = stategy),
-    validate: () => currentValidationStrategy(data),
-  };
-};
+const createValidator = require('./strategy/strategy');
 
 const age = 18;
 const ageValidator = createValidator(age, (data) => data > 18);
